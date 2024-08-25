@@ -39,6 +39,11 @@ app.get('/bfhl', (req, res) => {
     });
 });
 
+app.use(cors({
+  origin: 'https://bajaj-nphv.onrender.com' 
+}));
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
