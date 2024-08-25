@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+var cors = require('cors');
+
 // Middleware for parsing JSON
 app.use(bodyParser.json());
 
